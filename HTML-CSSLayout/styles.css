@@ -1,0 +1,143 @@
+:root {
+  --primary-color: #07172a;
+  --secondary-color: #ffffff;
+  --font-family: "Arial, sans-serif";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  background-color: var(--secondary-color);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heroContainer {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1rem 0;
+}
+
+.header .logo img {
+  height: 40px;
+}
+
+.header .navigation ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.header .navigation ul li {
+  margin-left: 20px;
+}
+
+.header .navigation ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.header .navigation ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero {
+  /* background: url("hero-bg.jpg") no-repeat center center/cover;
+  color: var(--secondary-color); */
+  text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 72vh;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.footer .social-media a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer .social-media img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer .contact-info p {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .navigation ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .navigation ul li {
+    margin: 10px 0;
+  }
+}
+
+.bodyContainer {
+  height: 100vh;
+}
